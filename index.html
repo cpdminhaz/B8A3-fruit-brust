@@ -19,6 +19,9 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/6870a123ec.js" crossorigin="anonymous"></script>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
     <!-- Universal Styles -->
     <style>
         * {
@@ -29,9 +32,51 @@
     <title>Fruit Burst</title>
 </head>
 
+
+
 <body>
     <!-- Header Section -->
-    <header class="container mx-auto">
+    <header class="container mx-auto md:px-12 lg:px-24">
+        <nav>
+            <div class="navbar md:bg-[#F85559] lg:bg-[#F85559] rounded-[600px]">
+                <div class="navbar-left hidden text-white md:w-[1050px] md:flex lg:w-[1250px] lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div>
+                    
+                </div>
+                <div class="navbar-start">
+                    <div class="dropdown md:hidden lg:hidden">
+                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center lg:mr-20 gap-3">
+                    <img src="./images/logo.png" alt="">
+                    <h1 class="lg:text-white md:text-white md:text-2xl lg:text-4xl font-bold">Fruit Burst</h1>
+                </div>
+                <!-- djhfkjsdhfs -->
+                <input type="text" placeholder="Search here" class="input input-bordered md:hidden lg:block lg:w-[1000px] lg:rounded-[300px] hidden" />
+            </div>
+        </nav>
+
     </header>
     <main>
         <!-- Banner Section -->
@@ -89,10 +134,11 @@
                         <a href="#slide3" class="btn btn-circle">❮</a>
 
                         <div class="max-w-md text-center text-white">
-                            <h1 class="mb-5 text-xl md:text-4xl lg:text-6xl lg:font-extrabold">Exotic tastes at your doorstep</h1>
+                            <h1 class="mb-5 text-xl md:text-4xl lg:text-6xl lg:font-extrabold">Exotic tastes at your
+                                doorstep</h1>
                             <p class="mb-5 text-xs md:text-sm lg:text-lg">We supply highly quality organic products</p>
                             <button class="btn btn-error text-white normal-case ">Shop Now</button>
-                          </div>    
+                        </div>
 
                         <a href="#slide1" class="btn btn-circle">❯</a>
                     </div>
@@ -104,15 +150,16 @@
         <!-- Deal of the day Section -->
         <div class="flex flex-col md:flex-row lg:flex-row justify-between items-center px-3 md:px-11 lg:px-24">
             <div class=" text-center md:text-left lg:text-left space-y-1 md:space-y-3 lg:space-y-5">
-                <h2 class="text-5xl font-extrabold">Deal of the day</h2>
-                <p class="text-base font-medium">Contrary to popular belief, is not simply random text. <br> It has roots in
+                <h2 class="text-xl font-bold md:text-3xl font-bold lg:text-5xl lg:font-extrabold">Deal of the day</h2>
+                <p class="text-xs md:text-sm lg:text-base lg:font-medium space-y-1 md:space-y-3 lg:space-y-5">Contrary to popular belief, is not simply random text. <br> It has
+                    roots in
                     a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
             <div>
                 <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
                     <div class="flex flex-col">
                         <span class="countdown font-mono text-5xl">
-                            <span style="--value:15;"></span>
+                            <span style="--value:05;"></span>
                         </span>
                         days
                     </div>
